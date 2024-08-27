@@ -1,4 +1,4 @@
-public class Principal {
+public class FilmePrincipal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
         meuFilme.nome = "O poderoso chefao";
@@ -10,8 +10,7 @@ public class Principal {
         meuFilme.avalia(5);
         meuFilme.avalia(10);
 
-        System.out.println("Soma das avaliações: " + meuFilme.somaAvaliacao);
-        System.out.println("Total de avaliações: " + meuFilme.totalAvaliacoes);
+        System.out.println("Total de avaliações: " + meuFilme.gettotalAvaliacoes());
         System.out.println("Nota media: " + meuFilme.pegaMedia());
     }
 }
