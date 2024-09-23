@@ -1,3 +1,4 @@
+package Exercicios;
 public class MusicaPrincipal {
     public static void main(String [] args) {
         Musica minhaMusica = new Musica();
