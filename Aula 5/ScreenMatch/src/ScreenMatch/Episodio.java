@@ -1,9 +1,10 @@
 package ScreenMatch;
 
-public class Episodio {
+public class Episodio implements Classificavel{
     private int numero;
     private String nome;
     private Serie serie;
+    private int totalVisualizacoes;
 
     public int getNumero(){
         return numero;
@@ -27,5 +28,22 @@ public class Episodio {
 
     public void setSerie(Serie serie) {
         this.serie = serie;
+    }
+
+    public int getTotalAvaliacoes() {
+        return totalVisualizacoes;
+    }
+
+    public void setTotalVisualizacoes(int totalDeAvaliacoes) {
+        this.totalVisualizacoes = totalDeAvaliacoes;
+    }
+
+    @Override
+    public int getClassificacao() {
+        if (totalVisualizacoes > 100) {
+            return 4;
+        } else {
+            return 2;
+        }
     }
 }
